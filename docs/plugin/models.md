@@ -81,16 +81,9 @@ Esempio generico:
     }
   }
 }
-Eccoti  scritto in modo completo, professionale, coerente con l’architettura di ecommons e pronto per il repository GitHub.
-Tutto in un unico code‑box nero, come richiesto.
+```
 
-
-models/
-
-models/ │ ├── gas.json ├── amap.json ├── csa.json ├── solawi.json ├── teikei.json ├── foodcoop.json ├── asc.json ├── kokisz.json ├── andelsjordbruk.json └── agronauts.json
-
-
-4. Campi principali
+# 4. Campi principali
 4.1 
 Nome breve del modello.
 4.2 
@@ -111,7 +104,7 @@ Permessi aggiuntivi o restrittivi per ruoli specifici.
 4.6 
 Override di configurazione per singoli moduli.
 
-5. Ciclo di attivazione del modello
+# 5. Ciclo di attivazione del modello
 1. 	L’utente seleziona un modello nella dashboard.
 2. 	Il Core Loader carica il file JSON.
 3. 	Il Model Engine valida il file:
@@ -124,7 +117,7 @@ Override di configurazione per singoli moduli.
 7. 	Applica i permessi aggiuntivi.
 Il risultato è un’installazione completamente adattata al modello scelto.
 
-6. Modelli ufficiali
+# 6. Modelli ufficiali
 Di seguito i modelli ufficiali inclusi in ecommons.
 
 6.1 GAS (Gruppi di Acquisto Solidale)
@@ -187,7 +180,7 @@ Moduli attivi:
 • 	logistics
 • 	governance
 
-7. Override locali
+# 7. Override locali
 Ogni installazione può definire un file:
 
 Questo file:
@@ -197,7 +190,7 @@ Questo file:
 Esempio:
 
 
-8. Best practices
+# 8. Best practices
 8.1 Non duplicare modelli
 Se un modello è simile a un altro, usare override.
 8.2 Non inserire logica nei modelli
@@ -209,7 +202,7 @@ I moduli devono corrispondere ai nomi delle cartelle.
 8.5 Mantenere i modelli minimali
 Solo ciò che serve.
 
-9. Conclusione
+# 9. Conclusione
 I Model Profiles sono ciò che rende ecommons un’infrastruttura veramente adattiva.
 Grazie ai modelli:
 • 	un singolo plugin può supportare decine di forme organizzative
