@@ -96,56 +96,20 @@ Solo il Core e il Model Engine orchestrano l’insieme.
 # 2. Struttura dei moduli
 
 Ogni modulo ha una struttura standard:
-# Modules — ecommons  
-## Architettura modulare e composizione adattiva
 
-Questo documento descrive l’architettura dei moduli di ecommons, il loro ciclo di vita, le dipendenze, le responsabilità e il modo in cui vengono attivati dal Model Engine.  
-I moduli sono il cuore dell’approccio adattivo di ecommons: ogni modello organizzativo (GAS, AMAP, CSA, Solawi, Food Coop…) è una **composizione di moduli**, non un software separato.
+modules/<module-name>/ 
 
----
+│ 
 
-# 1. Principi dei moduli
+├── class-<module-name>.php     # Classe principale del modulo 
 
-I moduli di ecommons seguono cinque principi fondamentali:
+├── rest/                       # Endpoint REST specifici 
 
-### **1.1 Modularità radicale**
-Ogni funzionalità è isolata in un modulo indipendente.  
-Il core rimane minimale e stabile.
+├── templates/                  # Template frontend 
 
-### **1.2 Attivazione condizionata**
-I moduli vengono attivati in base a:
+├── assets/                     # JS, CSS, immagini 
 
-- modello selezionato  
-- configurazioni locali  
-- dipendenze soddisfatte  
-
-### **1.3 Estendibilità**
-Ogni modulo può:
-
-- registrare post types  
-- aggiungere REST endpoints  
-- aggiungere template  
-- aggiungere ruoli e permessi  
-- aggiungere logiche operative  
-
-### **1.4 Interoperabilità**
-I moduli comunicano tramite:
-
-- hook  
-- filtri  
-- REST  
-- eventi interni  
-
-### **1.5 Indipendenza**
-Nessun modulo deve conoscere l’implementazione interna degli altri.  
-Solo il Core e il Model Engine orchestrano l’insieme.
-
----
-
-# 2. Struttura dei moduli
-
-Ogni modulo ha una struttura standard:
-modules/<module-name>/ │ ├── class-<module-name>.php     # Classe principale del modulo ├── rest/                       # Endpoint REST specifici ├── templates/                  # Template frontend ├── assets/                     # JS, CSS, immagini └── config.json                 # Metadati del modulo
+└── config.json                 # Metadati del modulo
 
 ### **2.1 class-<module-name>.php**
 Contiene:
@@ -190,11 +154,6 @@ Esempio:
   "dependencies": ["producers", "products"],
   "optional": false
 }
-
-Eccoti tutto il file  interamente racchiuso in un unico code‑box nero, come richiesto.
-
-
-modules/<module-name>/ │ ├── class-<module-name>.php     # Classe principale del modulo ├── rest/                       # Endpoint REST specifici ├── templates/                  # Template frontend ├── assets/                     # JS, CSS, immagini └── config.json                 # Metadati del modulo
 
 
 # 3. Ciclo di vita di un modulo
