@@ -111,6 +111,7 @@ modules/<module-name>/
 
 └── config.json                 # Metadati del modulo
 
+
 ### **2.1 class-<module-name>.php**
 Contiene:
 
@@ -132,28 +133,6 @@ Esempio:
   "dependencies": ["producers", "products"],
   "optional": false
 }
-
-### **2.1 class-<module-name>.php**
-Contiene:
-
-- registrazione del modulo  
-- hook e filtri  
-- inizializzazione  
-- caricamento di REST, template, assets  
-- dipendenze richieste  
-
-### **2.2 config.json**
-Esempio:
-
-
-'{
-  "name": "orders",
-  "title": "Orders",
-  "description": "Gestione degli ordini comunitari",
-  "version": "1.0.0",
-  "dependencies": ["producers", "products"],
-  "optional": false
-}'
 
 
 
