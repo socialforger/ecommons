@@ -145,7 +145,7 @@ Contiene:
 ### **2.2 config.json**
 Esempio:
 
-```json
+```
 {
   "name": "orders",
   "title": "Orders",
@@ -155,6 +155,7 @@ Esempio:
   "optional": false
 }
 ```
+
 
 # 3. Ciclo di vita di un modulo
  1. 	Rilevamento
