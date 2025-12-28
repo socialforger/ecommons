@@ -145,16 +145,16 @@ Contiene:
 ### **2.2 config.json**
 Esempio:
 
-```
-{
+
+'{
   "name": "orders",
   "title": "Orders",
   "description": "Gestione degli ordini comunitari",
   "version": "1.0.0",
   "dependencies": ["producers", "products"],
   "optional": false
-}
-```
+}'
+
 
 
 # 3. Ciclo di vita di un modulo
