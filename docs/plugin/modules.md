@@ -127,23 +127,28 @@ Contiene:
 
 
 # 3. Ciclo di vita di un modulo
- 1. 	Rilevamento
+
+1. 	Rilevamento
  Il Core Loader scansiona la cartella modules/.
- 2. 	Validazione
+ 
+2. 	Validazione
  Verifica:
  • 	presenza della classe principale
  • 	integrità del config.json
  • 	dipendenze soddisfatte
- 3. 	Attivazione
+ 
+3. 	Attivazione
  Il Model Engine attiva solo i moduli richiesti dal modello selezionato.
- 4. 	Inizializzazione
+ 
+4. 	Inizializzazione
  Il modulo registra:
  • 	post types
  • 	tassonomie
  • 	ruoli
  • 	REST endpoints
  • 	template
- 5. 	Esecuzione
+ 
+5. 	Esecuzione
  Il modulo opera in autonomia, esponendo hook e filtri.
 
 # 4. Elenco dei moduli ufficiali
