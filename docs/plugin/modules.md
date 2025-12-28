@@ -123,8 +123,16 @@ Contiene:
 
 ### **2.2 config.json**
 
-
-
+```json
+{
+  "name": "orders",
+  "title": "Orders",
+  "description": "Gestione degli ordini comunitari",
+  "version": "1.0.0",
+  "dependencies": ["producers", "products"],
+  "optional": false
+}
+```
 
 # 3. Ciclo di vita di un modulo
 
@@ -244,4 +252,4 @@ La modularità è ciò che rende ecommons:
 • 	estensibile
 • 	federabile
 • 	sostenibile
-• 	futuro‑proof
+• 	future‑proof
